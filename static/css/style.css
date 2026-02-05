@@ -1,5 +1,4 @@
 /* Global*/
-
 * {
   margin: 0;
   padding: 0;
@@ -33,16 +32,38 @@ body {
   .rojo {
     color: var(--color-red);
     font-weight: bold;
+
+    progress::-webkit-progress-value {
+      background-color: var(--color-red);
+      border-radius: 6px;
+    }
   }
 
   .amarillo {
     color: var(--color-yellow);
     font-weight: bold;
+
+    progress::-webkit-progress-value {
+      background-color: var(--color-yellow);
+      border-radius: 6px;
+    }
   }
 
   .verde {
     color: var(--color-green);
     font-weight: bold;
+
+    progress::-webkit-progress-value {
+      background-color: var(--color-green);
+      border-radius: 6px;
+    }
+  }
+
+  .negro {
+    progress::-webkit-progress-value {
+      background-color: #000000;
+      border-radius: 6px;
+    }
   }
 
   .visually-hidden {
@@ -94,89 +115,54 @@ body {
   justify-content: center;
   width: fit-content;
   margin: 0 auto;
-}
 
-.card {
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin: 20px;
-  width: 280px;
-}
-
-.card-image {
-  border-radius: 6px;
-  overflow: hidden;
-  height: 270px;
-}
-
-.card-subtitle {
-  font-weight: bold;
-  margin: 10px 0;
-}
-
-.card-progress {
-  width: 100%;
-  margin: 15px 0;
-  padding: 0;
-}
-
-.card-progress label {
-  display: block;
-  margin-bottom: 8px;
-  font-size: 13px;
-  font-weight: 500;
-  color: #000000;
-  text-align: left;
-}
-
-.card-progress progress {
-  width: 100%;
-  height: 12px;
-  border-radius: 6px;
-  border: none;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background-color: #e0e0e0;
-
-  .rojo {
-    progress::-webkit-progress-value {
-      background-color: var(--color-red);
-      border-radius: 6px;
-    }
-
-    progress::-moz-progress-bar {
-      background-color: var(--color-red);
-      border-radius: 6px;
-    }
+  .card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    width: 280px;
+  }
+  
+  .card-image {
+    border-radius: 6px;
+    overflow: hidden;
+    height: 270px;
   }
 
-  .amarillo {
-    progress::-webkit-progress-value {
-      background-color: var(--color-yellow);
-      border-radius: 6px;
-    }
-
-    progress::-moz-progress-bar {
-      background-color: var(--color-yellow);
-      border-radius: 6px;
-    }
+  .card-subtitle {
+    font-weight: bold;
+    margin: 10px 0;
   }
 
-  .verde {
-    progress::-webkit-progress-value {
-      background-color: var(--color-green);
-      border-radius: 6px;
+  .card-progress {
+    width: 100%;
+    margin: 15px 0;
+    padding: 0;
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 13px;
+      font-weight: 500;
+      color: #000000;
+      text-align: left;
     }
 
-    progress::-moz-progress-bar {
-      background-color: var(--color-green);
+    progress {
+      width: 100%;
+      height: 12px;
       border-radius: 6px;
+      border: none;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background-color: #e0e0e0;
     }
   }
 }
+
 
 /* Estilos generales para progress bar */
 progress {
@@ -188,26 +174,6 @@ progress {
   -webkit-appearance: none;
   -moz-appearance: none;
   background-color: #e0e0e0;
-}
-
-.rojo progress::-webkit-progress-value {
-  background-color: var(--color-red);
-  border-radius: 6px;
-}
-
-.amarillo progress::-webkit-progress-value {
-  background-color: var(--color-yellow);
-  border-radius: 6px;
-}
-
-.verde progress::-webkit-progress-value {
-  background-color: var(--color-green);
-  border-radius: 6px;
-}
-
-.negro progress::-webkit-progress-value {
-  background-color: #000000;
-  border-radius: 6px;
 }
 
 .btn-r {
@@ -406,6 +372,7 @@ section.features {
 
 /* corregido */
 section.achievements {
+  height: 600px;
   .card {
     display: inline-block;
     margin: 20px 20px;
@@ -415,6 +382,7 @@ section.achievements {
     width: 180px;
     p {
       color: rgb(95, 95, 95);
+      font-size: 19px;
     }
   }
 }
