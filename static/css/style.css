@@ -532,16 +532,28 @@ section.work {
 }
 
 section.elements {
-  .dinero {
-    font-size: 34px;
-    font-weight: bold;
-    display: inline;
-    margin-right: 5px;
-  }
+  .card{
+    padding-bottom: 5%;;
+    h3{
+      font-size: 27px;
+      font-weight: 600;
+    }
+    
+    p{
+      font-size: 13px;
+    }
 
-  .dinero + p {
-    display: inline;
-    margin-left: 0;
+    .dinero {
+      font-size: 50px;
+      font-weight:400;
+      display: inline;
+      margin-right: 5px;
+    }
+
+    .dinero + p {
+      display: inline;
+      margin-left: 0;
+    }
   }
 }
 
