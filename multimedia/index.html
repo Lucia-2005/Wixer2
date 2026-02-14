@@ -553,17 +553,34 @@
                     <button type="submit">Contact Now</button>
                 </form>
 
-                <svg height="130" width="500">
-                    <defs>
-                        <linearGradient id="grad1">
-                            <stop offset="10%" stop-color="orange" />
-                            <stop offset="100%" stop-color="#e19339" />
-                        </linearGradient>
-                    </defs>
-                    <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
-                    <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">LCS</text>
-                    Sorry, your browser does not support inline SVG.
-                </svg>
+                <div class="media-container">
+                    
+                    <!-- No me dejaba poner ningun video de los 
+                    que queria, asique he elegido algo que 
+                    no tendria bloqueado esto -->
+                    <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/tvO-LTGIrXo?si=JGCXIxsr95oZqIVF" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    
+                    <video width="450" height="340" controls>
+                        <source src="static/video/video-multimedia.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <svg height="130" width="500">
+                        <defs>
+                            <linearGradient id="grad1">
+                                <stop offset="10%" stop-color="orange" />
+                                <stop offset="100%" stop-color="#e19339" />
+                            </linearGradient>
+                        </defs>
+                        <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+                        <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">LCS</text>
+                        Sorry, your browser does not support inline SVG.
+                    </svg>
+                </div>
             </div>
         </section>
     </main>
